@@ -1,29 +1,141 @@
 {
   "users": [
-    { "id": "1", "username": "user1", "email": "user1@example.com", "password": "password1" },
-    { "id": "2", "username": "user2", "email": "user2@example.com", "password": "password2" },
-    { "id": "3", "username": "user3", "email": "user3@example.com", "password": "password3" },
-    { "id": "4", "username": "user4", "email": "user4@example.com", "password": "password4" },
-    { "id": "5", "username": "user5", "email": "user5@example.com", "password": "password5" },
-    { "id": "6", "username": "user6", "email": "user6@example.com", "password": "password6" },
-    { "id": "7", "username": "user7", "email": "user7@example.com", "password": "password7" },
-    { "id": "8", "username": "user8", "email": "user8@example.com", "password": "password8" },
-    { "id": "9", "username": "user9", "email": "user9@example.com", "password": "password9" },
-    { "id": "10", "username": "user10", "email": "user10@example.com", "password": "password10" }
+    {
+      "id": "65d8d184b27b8069a18462d1",
+      "username": "Hannah Bennett",
+      "isActive": true,
+      "picture": "http://placehold.it/32x32",
+      "age": 37,
+      "gender": "female",
+      "company": "SEALOUD",
+      "email": "hannahbennett@sealoud.com",
+      "phone": "+1 (958) 563-3494",
+      "address": "226 Porter Avenue, Alden, Idaho, 4364"
+    },
+    {
+      "id": "65d8d1843c776383d5fc1c65",
+      "username": "Amelia Price",
+      "isActive": true,
+      "picture": "http://placehold.it/32x32",
+      "age": 23,
+      "gender": "female",
+      "company": "KNEEDLES",
+      "email": "ameliaprice@kneedles.com",
+      "phone": "+1 (830) 432-2166",
+      "address": "760 Mill Street, Avalon, Delaware, 7954"
+    },
+    {
+      "id": "65d8d184bd9d706df2e5313c",
+      "username": "Cherie Serrano",
+      "isActive": false,
+      "picture": "http://placehold.it/32x32",
+      "age": 22,
+      "gender": "female",
+      "company": "GEEKNET",
+      "email": "cherieserrano@geeknet.com",
+      "phone": "+1 (942) 573-3611",
+      "address": "680 Albemarle Road, Hoagland, Illinois, 7398"
+    },
+    {
+      "id": "65d8d1841582d49b65fd2b96",
+      "username": "Gonzalez Hill",
+      "isActive": true,
+      "picture": "http://placehold.it/32x32",
+      "age": 20,
+      "gender": "male",
+      "company": "ZENTRY",
+      "email": "gonzalezhill@zentry.com",
+      "phone": "+1 (883) 439-2797",
+      "address": "971 Schaefer Street, Sedley, Michigan, 6200"
+    },
+    {
+      "id": "65d8d184927a58097ef80d07",
+      "username": "Allyson Best",
+      "isActive": true,
+      "picture": "http://placehold.it/32x32",
+      "age": 34,
+      "gender": "female",
+      "company": "PORTALIS",
+      "email": "allysonbest@portalis.com",
+      "phone": "+1 (865) 426-2999",
+      "address": "262 Cadman Plaza, Gratton, Guam, 7218"
+    },
+    {
+      "id": "65d8d18493f27cba5deaf19f",
+      "username": "Church Love",
+      "isActive": true,
+      "picture": "http://placehold.it/32x32",
+      "age": 24,
+      "gender": "male",
+      "company": "XIXAN",
+      "email": "churchlove@xixan.com",
+      "phone": "+1 (807) 552-3705",
+      "address": "198 Suydam Street, Nicholson, Federated States Of Micronesia, 6457"
+    },
+    {
+      "id": "65d8d184a8bff8091b936e76",
+      "username": "Fern Chan",
+      "isActive": false,
+      "picture": "http://placehold.it/32x32",
+      "age": 25,
+      "gender": "female",
+      "company": "ZILLATIDE",
+      "email": "fernchan@zillatide.com",
+      "phone": "+1 (945) 564-3753",
+      "address": "370 Vandalia Avenue, Glasgow, Tennessee, 277"
+    }
   ],
-  
   "posts": [
-    { "id": 1, "userId": 1, "title": "Post 1", "description": "Description of Post 1" },
-  { "id": 2, "userId": 2, "title": "Post 2", "description": "Description of Post 2" },
-  { "id": 3, "userId": 3, "title": "Post 3", "description": "Description of Post 3" },
-  { "id": 4, "userId": 4, "title": "Post 4", "description": "Description of Post 4" },
-  { "id": 5, "userId": 5, "title": "Post 5", "description": "Description of Post 5" },
-  { "id": 6, "userId": 6, "title": "Post 6", "description": "Description of Post 6" },
-  { "id": 7, "userId": 7, "title": "Post 7", "description": "Description of Post 7" },
-  { "id": 8, "userId": 8, "title": "Post 8", "description": "Description of Post 8" },
-  { "id": 9, "userId": 9, "title": "Post 9", "description": "Description of Post 9" },
-  { "id": 10, "userId": 10, "title": "Post 10", "description": "Description of Post 10" }
-]
+    {
+      "id": "65d8d35c3544801a48783576",
+      "userId": "65d8d35c28ad2bf6d1638995",
+      "picture": "http://placehold.it/32x32",
+      "title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      "content": "Sit ullamco non minim fugiat ex. Elit id aliquip qui esse consectetur fugiat fugiat veniam excepteur commodo aute duis. Ad proident commodo enim sunt incididunt duis occaecat consequat. Non dolore enim esse incididunt irure ut reprehenderit commodo officia culpa ut. Ut quis labore excepteur duis in voluptate ut consectetur pariatur consequat sint ullamco pariatur eu. Duis ex incididunt laborum do ad id aliqua anim incididunt.\r\n"
+    },
+    {
+      "id": "65d8d35c0fd9f4b1d2472108",
+      "userId": "65d8d35c239aacb2cfffbec9",
+      "picture": "http://placehold.it/32x32",
+      "title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      "content": "Nostrud sint est pariatur adipisicing sunt deserunt veniam dolore ex cillum incididunt minim sint. Magna occaecat enim quis sunt labore ullamco adipisicing aliquip minim consequat proident. Amet nisi ex non pariatur sint voluptate quis. Sit mollit consectetur sunt culpa voluptate sint aliqua non laboris cupidatat minim aute non. Consectetur laborum laboris duis esse amet.\r\n"
+    },
+    {
+      "id": "65d8d35c15be7f459cac0a7c",
+      "userId": "65d8d35c80028ab11d4f4a27",
+      "picture": "http://placehold.it/32x32",
+      "title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      "content": "Lorem id voluptate est nisi laboris et pariatur occaecat duis veniam nulla reprehenderit. Proident eu ullamco id ex consequat et cillum sit. Pariatur amet consectetur consequat est laboris consequat labore velit. Incididunt commodo proident Lorem voluptate non amet officia labore. Consectetur deserunt sunt cupidatat esse aliquip do. Deserunt aute et nisi laboris et adipisicing esse pariatur cupidatat officia eiusmod.\r\n"
+    },
+    {
+      "id": "65d8d35c772e765bf2ab4513",
+      "userId": "65d8d35c439ede6b086b1388",
+      "picture": "http://placehold.it/32x32",
+      "title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      "content": "Eiusmod esse laborum veniam ad cillum ex in ullamco. Ea elit veniam nisi fugiat veniam ullamco magna duis excepteur sint adipisicing ipsum esse. Amet id sit aliquip exercitation culpa id anim nulla non elit eu. Amet velit amet sint ad veniam pariatur consectetur incididunt labore aliquip consequat excepteur aliqua. Sint culpa ipsum anim ipsum.\r\n"
+    },
+    {
+      "id": "65d8d35c1d354979d9a5140b",
+      "userId": "65d8d35c9f8ddc42788c9eab",
+      "picture": "http://placehold.it/32x32",
+      "title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      "content": "Culpa aliqua esse qui fugiat officia. Nostrud ex aliquip esse laboris occaecat velit voluptate aliqua ut eiusmod. Laboris in ipsum aliqua ad cupidatat ex occaecat reprehenderit velit mollit proident quis aliquip. Aute eu sint in exercitation sint irure adipisicing minim velit incididunt. Lorem incididunt veniam eu velit tempor. Reprehenderit elit dolor sit nulla id ullamco veniam. Ea non pariatur fugiat ea deserunt ex sunt esse ea pariatur excepteur enim.\r\n"
+    },
+    {
+      "id": "65d8d35c824cf7d1b1828d2b",
+      "userId": "65d8d35c60ce21ea35530625",
+      "picture": "http://placehold.it/32x32",
+      "title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      "content": "Veniam ut sint nulla ad culpa tempor nisi officia. Officia ipsum sint labore do excepteur laborum. Minim aliquip aute ad in anim.\r\n"
+    },
+    {
+      "id": "65d8d35c181e8ecf331909a3",
+      "userId": "65d8d35c69c1a8760963d714",
+      "picture": "http://placehold.it/32x32",
+      "title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      "content": "Aliquip deserunt voluptate sint consequat in proident eiusmod labore non reprehenderit laboris et fugiat. Veniam id officia officia laborum ut labore. Ut exercitation ea sunt culpa laboris eiusmod nisi sint cillum enim consequat irure officia. Fugiat magna dolor Lorem quis consectetur anim irure nostrud elit amet deserunt reprehenderit ex. Nostrud esse veniam anim eiusmod deserunt exercitation. Id cillum aliqua non consectetur. Veniam qui proident dolore nisi laboris.\r\n"
+    }
+  ]
   
 }
 
