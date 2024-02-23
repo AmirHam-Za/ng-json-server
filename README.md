@@ -41,7 +41,3 @@ Make sure you have the following installed on your system:
    http://localhost:4200/ to view the application.
    
 
-## Development server
-
-Run ng serve for a dev server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.
-
