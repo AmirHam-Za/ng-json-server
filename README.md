@@ -1,12 +1,7 @@
 # ng-json-server
 
-<<<<<<< HEAD
-json-server implementation with Angular 17.
-=======
-![Project Logo](https://cdn-images-1.medium.com/v2/resize:fit:184/1*uJa0SU-F2NXVKhHTbP1HBw@2x.png)
 
-This project is a simple Angular application for managing a shopping cart.
->>>>>>> 8efc5100f21e219043f65528c3c457014f8d21f5
+# json-server implementation with Angular 17.
 
 ## 🚀 Getting Started
 
@@ -45,8 +40,4 @@ Make sure you have the following installed on your system:
    This will start a development server. Open your web browser and navigate to
    http://localhost:4200/ to view the application.
    
-
-## Development server
-
-Run ng serve for a dev server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.
 
