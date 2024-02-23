@@ -1,6 +1,5 @@
 # ng-json-server
 
-
 # json-server implementation with Angular 17.
 
 ## 🚀 Getting Started
