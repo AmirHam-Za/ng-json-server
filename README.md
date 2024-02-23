@@ -24,17 +24,17 @@ Make sure you have the following installed on your system:
    
 2. *Navigate to the project directory:*
 
-   cd ng-json-server.
+   `cd ng-json-server`
 
 3. *Install dependencies:*
 
-   npm install
+   `npm install`
 
 4. *Running the Application:*
 
    To run the application locally, use the following command:
 
-   npm run start
+   `npm run start`
 
 5. *Running in the Browser:*
 
