@@ -1,6 +1,12 @@
 # ng-json-server
 
+<<<<<<< HEAD
 json-server implementation with Angular 17.
+=======
+![Project Logo](https://cdn-images-1.medium.com/v2/resize:fit:184/1*uJa0SU-F2NXVKhHTbP1HBw@2x.png)
+
+This project is a simple Angular application for managing a shopping cart.
+>>>>>>> 8efc5100f21e219043f65528c3c457014f8d21f5
 
 ## 🚀 Getting Started
 
