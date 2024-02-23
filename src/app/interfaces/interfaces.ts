@@ -6,8 +6,6 @@ export interface Post {
   "content": string
 }
 
-
-
 export interface User {
   "id": string,
   "username": string,
