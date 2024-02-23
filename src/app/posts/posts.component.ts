@@ -25,7 +25,6 @@ export class PostsComponent {
     this.loadPosts()
 
   }
-
   loadPosts(){
   this.getPosts().subscribe((data:Post[])=>{
   this.posts = data

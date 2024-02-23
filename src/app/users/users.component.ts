@@ -32,8 +32,8 @@ loadUser(){
   console.log('users:',data)
 })
 }
+
   getUsers():Observable<User[]>{
     return this.http.get<User[]>((`${API_ENDPOINT}/users`))
-    
-  }
+    }
 }
