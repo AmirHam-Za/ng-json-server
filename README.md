@@ -1,4 +1,4 @@
-# Angular Cart Project
+# ng-json-server
 
 ![Project Logo](https://cdn-images-1.medium.com/v2/resize:fit:184/1*uJa0SU-F2NXVKhHTbP1HBw@2x.png)
 
@@ -20,11 +20,11 @@ Make sure you have the following installed on your system:
 
 1. *Clone the repository:*
 
-   git clone https://github.com/AmirHam-Za/angular-cart.git
+   git clone https://github.com/AmirHam-Za/ng-json-server.git
    
 2. *Navigate to the project directory:*
 
-   cd angular-cart
+   cd ng-json-server.
 
 3. *Install dependencies:*
 
@@ -34,7 +34,7 @@ Make sure you have the following installed on your system:
 
    To run the application locally, use the following command:
 
-   ng serve
+   npm run start
 
 5. *Running in the Browser:*
 
