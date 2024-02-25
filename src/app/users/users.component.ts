@@ -4,13 +4,15 @@ import { Component, OnInit, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { API_ENDPOINT } from '../constant';
 import { User } from '../interfaces/interfaces';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-users',
   standalone: true,
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterLink
   ],
   templateUrl: './users.component.html',
   styleUrl: './users.component.css'
@@ -34,6 +36,17 @@ loadUser(){
 }
 
   getUsers():Observable<User[]>{
-    return this.http.get<User[]>((`${API_ENDPOINT}/users`))
+    return this.http.get<User[]>(`${API_ENDPOINT}/users`)
+    }
+
+
+    deleteUserById(id:string){
+      this.deleteUseFromDb(id).subscribe((res:User)=>{
+        console.log(res)
+        this.loadUser()
+      })
+    }
+    deleteUseFromDb(id:string):Observable<User> {
+      return this.http.delete<User>(`${API_ENDPOINT}/users/${id}`)
     }
 }

@@ -1,8 +1,8 @@
-
-<div *ngFor="let user of users">
-    <p>User ID: {{ user.id }}</p>
-    <p>Username: {{ user.username }}</p>
-    <p>Gender: {{ user.gender }}</p>
-    <p>Email: {{ user.email }}</p>
-    <p>Address: {{ user.address }}</p>
+<div>
+    <ul *ngFor="let user of users">
+        <li >
+            <a [routerLink]="['/users', user.id]"> {{ user.username }}</a>
+            <span (click)=deleteUserById(user.id)>  X</span>
+        </li>
+    </ul>
 </div>

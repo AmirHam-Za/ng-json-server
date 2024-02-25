@@ -1,18 +1,6 @@
 {
   "users": [
     {
-      "id": "65d8d184b27b8069a18462d1",
-      "username": "Hannah Bennett",
-      "isActive": true,
-      "picture": "http://placehold.it/32x32",
-      "age": 37,
-      "gender": "female",
-      "company": "SEALOUD",
-      "email": "hannahbennett@sealoud.com",
-      "phone": "+1 (958) 563-3494",
-      "address": "226 Porter Avenue, Alden, Idaho, 4364"
-    },
-    {
       "id": "65d8d1843c776383d5fc1c65",
       "username": "Amelia Price",
       "isActive": true,
@@ -37,18 +25,6 @@
       "address": "680 Albemarle Road, Hoagland, Illinois, 7398"
     },
     {
-      "id": "65d8d1841582d49b65fd2b96",
-      "username": "Gonzalez Hill",
-      "isActive": true,
-      "picture": "http://placehold.it/32x32",
-      "age": 20,
-      "gender": "male",
-      "company": "ZENTRY",
-      "email": "gonzalezhill@zentry.com",
-      "phone": "+1 (883) 439-2797",
-      "address": "971 Schaefer Street, Sedley, Michigan, 6200"
-    },
-    {
       "id": "65d8d184927a58097ef80d07",
       "username": "Allyson Best",
       "isActive": true,
@@ -71,21 +47,8 @@
       "email": "churchlove@xixan.com",
       "phone": "+1 (807) 552-3705",
       "address": "198 Suydam Street, Nicholson, Federated States Of Micronesia, 6457"
-    },
-    {
-      "id": "65d8d184a8bff8091b936e76",
-      "username": "Fern Chan",
-      "isActive": false,
-      "picture": "http://placehold.it/32x32",
-      "age": 25,
-      "gender": "female",
-      "company": "ZILLATIDE",
-      "email": "fernchan@zillatide.com",
-      "phone": "+1 (945) 564-3753",
-      "address": "370 Vandalia Avenue, Glasgow, Tennessee, 277"
     }
   ],
-  
   "posts": [
     {
       "id": "65d8d35c3544801a48783576",
@@ -137,6 +100,4 @@
       "content": "Aliquip deserunt voluptate sint consequat in proident eiusmod labore non reprehenderit laboris et fugiat. Veniam id officia officia laborum ut labore. Ut exercitation ea sunt culpa laboris eiusmod nisi sint cillum enim consequat irure officia. Fugiat magna dolor Lorem quis consectetur anim irure nostrud elit amet deserunt reprehenderit ex. Nostrud esse veniam anim eiusmod deserunt exercitation. Id cillum aliqua non consectetur. Veniam qui proident dolore nisi laboris.\r\n"
     }
   ]
-  
 }
-
