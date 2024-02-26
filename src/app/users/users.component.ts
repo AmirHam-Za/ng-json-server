@@ -41,7 +41,6 @@ loadUser(){
     return this.http.get<User[]>(`${API_ENDPOINT}/users`)
     }
 
-
     deleteUserById(id:string){
       this.deleteUseFromDb(id).subscribe((res:User)=>{
         console.log(res)
@@ -53,8 +52,6 @@ loadUser(){
     deleteUseFromDb(id:string):Observable<User> {
       return this.http.delete<User>(`${API_ENDPOINT}/users/${id}`)
     }
-
-
 
     editUserById(userId: string): void {
       this.router.navigate(['/users', userId, 'edit']);

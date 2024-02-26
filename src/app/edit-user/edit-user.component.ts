@@ -38,13 +38,12 @@ export class EditUserComponent  implements OnInit{
     this.getUserById(userId).subscribe((user: User) => {
       this.user = user;
     });
-    
   }
+
   getUserById(id: string): Observable<User> {
     return this.http.get<User>(`${API_ENDPOINT}/users/${id}`);
   }
   
-
   onUpdate(): void {
     this.updateUser().subscribe((updatedUser: User) => {
       this.router.navigate(['/users']);
@@ -54,6 +53,5 @@ export class EditUserComponent  implements OnInit{
   updateUser(): Observable<User> {
     return this.http.put<User>(`${API_ENDPOINT}/users/${this.user.id}`, this.user);
   }
-
 
 }

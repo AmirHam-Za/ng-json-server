@@ -43,6 +43,7 @@ constructor(
       console.log(res)
     })
   }
+  
   getUserDetailsById(id:string): Observable<User>{
     return this.http.get<User>(`${API_ENDPOINT}/users/${id}`)
   }
