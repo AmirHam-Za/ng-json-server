@@ -3,6 +3,10 @@
         <li >
             <a [routerLink]="['/users', user.id]"> {{ user.username }}</a>
             <span (click)=deleteUserById(user.id)>  X</span>
+
+
+            <a [routerLink]="['/users', user.id]">{{ user.username }}</a>
+            <button (click)="editUserById(user.id)">Edit</button> 
         </li>
     </ul>
 </div>

@@ -4,13 +4,13 @@ import { Component, OnInit, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { API_ENDPOINT } from '../constant';
 import { User } from '../interfaces/interfaces';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-users',
   standalone: true,
   imports: [
-    CommonModule,
+    CommonModule, 
     HttpClientModule,
     RouterLink
   ],
@@ -21,7 +21,9 @@ export class UsersComponent implements OnInit {
 
   httpClient = inject(HttpClient)
   users: User[] = [];
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,
+    private router: Router
+    ) { }
 
   ngOnInit(): void {
     this.loadUser()
@@ -46,7 +48,15 @@ loadUser(){
         this.loadUser()
       })
     }
+    
+    
     deleteUseFromDb(id:string):Observable<User> {
       return this.http.delete<User>(`${API_ENDPOINT}/users/${id}`)
+    }
+
+
+
+    editUserById(userId: string): void {
+      this.router.navigate(['/users', userId, 'edit']);
     }
 }
