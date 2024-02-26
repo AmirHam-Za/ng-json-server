@@ -17,7 +17,7 @@ import { FormsModule } from '@angular/forms';
 export class EditUserComponent  implements OnInit{
   user: User = {
     id: '',
-    username: '',
+    title: '',
     isActive: false,
     picture: '',
     age: '',

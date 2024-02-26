@@ -19,7 +19,7 @@ import { ActivatedRoute } from '@angular/router';
 export class UserDetailsComponent implements OnInit {
 user: User={
   id: '',
-  username: '',
+  title: '',
   isActive: false,
   picture: '',
   age: '',

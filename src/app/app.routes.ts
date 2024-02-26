@@ -4,6 +4,7 @@ import { UsersComponent } from './users/users.component';
 import { PostsComponent } from './posts/posts.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
+import { EditPostComponent } from './edit-post/edit-post.component';
 
 export const routes: Routes = [
   {
@@ -24,6 +25,7 @@ export const routes: Routes = [
     component: UserDetailsComponent
   },
   { path: 'users/:id/edit', component: EditUserComponent }, // Edit user route
+  { path: 'posts/:id/edit', component: EditPostComponent }, // Edit user route
 
 
 ];

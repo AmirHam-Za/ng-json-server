@@ -1,5 +1,5 @@
 export interface Post {
-  "id": "string",
+  "id": string,
   "userId": string,
   "picture": string,
   "title": string,
@@ -8,7 +8,7 @@ export interface Post {
 
 export interface User {
   "id": string,
-  "username": string,
+  "title": string,
   "isActive": boolean,
   "picture": string,
   "age": string,
