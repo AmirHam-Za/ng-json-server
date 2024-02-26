@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Post, User } from '../interfaces/interfaces';
+import { Post } from '../interfaces/interfaces';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -39,13 +39,13 @@ export class EditPostComponent implements OnInit {
     return this.http.get<Post>(`${API_ENDPOINT}/posts/${id}`);
   }
   
-
   onUpdate(): void {
     this.updatePost().subscribe((updatedPost: Post) => {
       this.router.navigate(['/posts']);
       }
     );
   }
+ 
   updatePost(): Observable<Post> {
     return this.http.put<Post>(`${API_ENDPOINT}/posts/${this.post.id}`, this.post);
   }

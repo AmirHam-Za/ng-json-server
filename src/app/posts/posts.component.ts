@@ -51,7 +51,7 @@ getPosts():Observable<Post[]>{
   
   
   deletePostFromDb(id:string):Observable<Post> {
-    return this.http.delete<Post>(`${API_ENDPOINT}/users/${id}`)
+    return this.http.delete<Post>(`${API_ENDPOINT}/posts/${id}`)
   }
 
 
