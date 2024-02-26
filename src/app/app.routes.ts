@@ -24,8 +24,8 @@ export const routes: Routes = [
     path: 'users/:id',
     component: UserDetailsComponent
   },
-  { path: 'users/:id/edit', component: EditUserComponent }, // Edit user route
-  { path: 'posts/:id/edit', component: EditPostComponent }, // Edit user route
+  { path: 'users/:id/edit', component: EditUserComponent }, 
+  { path: 'posts/:id/edit', component: EditPostComponent }, 
 
 
 ];
