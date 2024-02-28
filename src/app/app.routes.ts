@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { UsersComponent } from './users/users.component';
 import { PostsComponent } from './posts/posts.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { EditPostComponent } from './edit-post/edit-post.component';
+import { UserListComponent } from './components/users/user-list/user-list.component';
 
 export const routes: Routes = [
   {
@@ -14,7 +14,7 @@ export const routes: Routes = [
   },
   {
     path: 'users',
-    component: UsersComponent
+    component: UserListComponent
   },
   {
     path: 'posts',
