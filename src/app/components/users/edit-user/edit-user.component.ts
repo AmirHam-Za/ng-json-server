@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { User } from '../interfaces/interfaces';
+import { User } from '../../../interfaces/interfaces';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
-import { API_ENDPOINT } from '../constant';
+import { API_ENDPOINT } from '../../../constant';
 import { FormsModule } from '@angular/forms';
+import { UserService } from '../../../services/user-service/user.service';
 
 @Component({
   selector: 'app-edit-user',
@@ -30,19 +31,21 @@ export class EditUserComponent  implements OnInit{
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private http: HttpClient
+    private http: HttpClient,
+    private userService: UserService,
+
   ) { }
 
   ngOnInit(): void {
     const userId = String(this.route.snapshot.paramMap.get('id'))
-    this.getUserById(userId).subscribe((user: User) => {
+    this.userService.getUserById(userId).subscribe((user: User) => {
       this.user = user;
     });
   }
 
-  getUserById(id: string): Observable<User> {
-    return this.http.get<User>(`${API_ENDPOINT}/users/${id}`);
-  }
+  // getUserById(id: string): Observable<User> {
+  //   return this.http.get<User>(`${API_ENDPOINT}/users/${id}`);
+  // }
   
   onUpdate(): void {
     this.updateUser().subscribe((updatedUser: User) => {

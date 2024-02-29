@@ -1,10 +1,11 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { PostsComponent } from './posts/posts.component';
-import { UserDetailsComponent } from './user-details/user-details.component';
-import { EditUserComponent } from './edit-user/edit-user.component';
-import { EditPostComponent } from './edit-post/edit-post.component';
+import { UserDetailsComponent } from './components/users/user-details/user-details.component';
+import { EditUserComponent } from './components/users/edit-user/edit-user.component';
+import { EditPostComponent } from './components/posts/edit-post/edit-post.component';
 import { UserListComponent } from './components/users/user-list/user-list.component';
+import { PostListComponent } from './components/posts/post-list/post-list.component';
+import { PostDetailsComponent } from './components/posts/post-details/post-details.component';
 
 export const routes: Routes = [
   {
@@ -18,11 +19,15 @@ export const routes: Routes = [
   },
   {
     path: 'posts',
-    component: PostsComponent
+    component: PostListComponent
   },
   {
     path: 'users/:id',
     component: UserDetailsComponent
+  },
+  {
+    path: 'posts/:id',
+    component: PostDetailsComponent
   },
   { path: 'users/:id/edit', component: EditUserComponent }, 
   { path: 'posts/:id/edit', component: EditPostComponent }, 

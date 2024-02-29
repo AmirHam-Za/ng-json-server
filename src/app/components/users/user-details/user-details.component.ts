@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { API_ENDPOINT } from '../constant';
-import { User } from '../interfaces/interfaces';
+
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
+import { User } from '../../../interfaces/interfaces';
+import { UserService } from '../../../services/user-service/user.service';
 
 @Component({
   selector: 'app-user-details',
@@ -30,21 +30,21 @@ user: User={
   address: ''
 }
 
-userIdFromRoute: string | undefined
 constructor(
-  private http:HttpClient,
-  private route: ActivatedRoute
+  private route: ActivatedRoute,
+  private userService: UserService,
 ){}
   ngOnInit(): void {
     const userIdFromRoute = String(this.route.snapshot.paramMap.get('id'))
     
-    this.getUserDetailsById(userIdFromRoute).subscribe((res:User)=>{
+    this.userService.getUserById(userIdFromRoute).subscribe((res:User)=>{
       this.user = res
       console.log(res)
     })
   }
-  
-  getUserDetailsById(id:string): Observable<User>{
-    return this.http.get<User>(`${API_ENDPOINT}/users/${id}`)
-  }
+
+
+    // getUserById(id: string): Observable<User> {
+  //   return this.http.get<User>(`${API_ENDPOINT}/users/${id}`);
+  // }
 }

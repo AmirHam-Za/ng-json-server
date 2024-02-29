@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Post } from '../interfaces/interfaces';
+import { Post } from '../../../interfaces/interfaces';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { API_ENDPOINT } from '../constant';
+import { API_ENDPOINT } from '../../../constant';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 

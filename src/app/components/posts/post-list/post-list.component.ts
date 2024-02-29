@@ -1,24 +1,25 @@
 import { CommonModule } from '@angular/common';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
+import { RouterLink, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { API_ENDPOINT } from '../constant';
-import { Post } from '../interfaces/interfaces';
-import { Router, RouterLink } from '@angular/router';
+import { API_ENDPOINT } from '../../../constant';
+import { Post } from '../../../interfaces/interfaces';
 
 @Component({
-  selector: 'app-posts',
+  selector: 'app-post-list',
   standalone: true,
   imports: [
+
     CommonModule,
     HttpClientModule,
     RouterLink
   ],
-  templateUrl: './posts.component.html',
-  styleUrl: './posts.component.css'
+  templateUrl: './post-list.component.html',
+  styleUrl: './post-list.component.css'
 })
-export class PostsComponent {
-  
+export class PostListComponent {
+
   httpClient = inject(HttpClient)
   posts: Post[] = []
  
