@@ -1,58 +1,47 @@
 import { CommonModule } from '@angular/common';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink, Router } from '@angular/router';
-import { Observable } from 'rxjs';
-import { API_ENDPOINT } from '../../../constant';
 import { User } from '../../../interfaces/interfaces';
+import { UserService } from '../../../services/user-service/user.service';
 
 @Component({
   selector: 'app-user-list',
   standalone: true,
   imports: [
     CommonModule, 
-    HttpClientModule,
     RouterLink
   ],
   templateUrl: './user-list.component.html',
   styleUrl: './user-list.component.css'
 })
 export class UserListComponent {
-  httpClient = inject(HttpClient)
   users: User[] = [];
-  constructor(private http: HttpClient,
-    private router: Router
+  
+  constructor(
+    private _userService: UserService,
+    private _router: Router
+    
     ) { }
 
   ngOnInit(): void {
-    this.loadUser()
-
+    this.getUsers()
   }
 
-loadUser(){
-  this.getUsers().subscribe((data:User[])=>{
-  this.users = data
-  console.log('users:',data)
-})
-}
-
-  getUsers():Observable<User[]>{
-    return this.http.get<User[]>(`${API_ENDPOINT}/users`)
-    }
+  getUsers() {
+    this._userService.getUsersAsync().subscribe((data: User[]) => {
+      this.users = data
+      console.log('users:', data)
+    })
+  }
 
     deleteUserById(id:string){
-      this.deleteUseFromDb(id).subscribe((res:User)=>{
+      this._userService.deleteUserByIdAsync(id).subscribe((res:User)=>{
         console.log(res)
-        this.loadUser()
+        this.getUsers()
       })
-    }
-    
-    
-    deleteUseFromDb(id:string):Observable<User> {
-      return this.http.delete<User>(`${API_ENDPOINT}/users/${id}`)
     }
 
     editUserById(userId: string): void {
-      this.router.navigate(['/users', userId, 'edit']);
+      this._router.navigate(['/users', userId, 'edit']);
     }
 }

@@ -16,7 +16,7 @@ import { UserService } from '../../../services/user-service/user.service';
   styleUrl: './edit-user.component.css'
 })
 export class EditUserComponent  implements OnInit{
-  user: User = {
+    user: User = {
     id: '',
     title: '',
     isActive: false,
@@ -29,28 +29,29 @@ export class EditUserComponent  implements OnInit{
     address: ''
   };
   constructor(
-    private route: ActivatedRoute,
-    private router: Router,
-    private http: HttpClient,
-    private userService: UserService,
+    private _route: ActivatedRoute,
+    private _router: Router,
+    private _http: HttpClient,
+    private _userService: UserService,
 
   ) { }
 
   ngOnInit(): void {
-    const userId = String(this.route.snapshot.paramMap.get('id'))
-    this.userService.getUserById(userId).subscribe((user: User) => {
+    const userId = String(this._route.snapshot.paramMap.get('id'))
+    this._userService.getUserByIdAsync(userId).subscribe((user: User) => {
       this.user = user;
     });
   }
 
-  onUpdate(): void {
-    this.updateUser().subscribe((updatedUser: User) => {
-      this.router.navigate(['/users']);
+  updateUser(): void {
+    this.updateUserAsync().subscribe(() => {
+      this._router.navigate(['/users']);
       }
     );
   }
-  updateUser(): Observable<User> {
-    return this.http.put<User>(`${API_ENDPOINT}/users/${this.user.id}`, this.user);
+
+  updateUserAsync(): Observable<User> {
+    return this._http.put<User>(`${API_ENDPOINT}/users/${this.user.id}`, this.user);
   }
 
 }

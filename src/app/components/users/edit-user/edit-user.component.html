@@ -1,8 +1,9 @@
 <p>edit-user works!</p>
 
-<form (ngSubmit)="onUpdate()">
+<form (ngSubmit)="updateUser()">
   <label>User Title:</label>
   <input type="text" [(ngModel)]="user.title" name="username" required>
   <button type="submit">Update</button>
 </form>
+
 

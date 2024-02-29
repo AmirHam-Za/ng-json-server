@@ -3,8 +3,7 @@ import { Injectable } from '@angular/core';
 import { API_ENDPOINT } from '../../constant';
 import { Observable } from 'rxjs';
 import { User } from '../../interfaces/interfaces';
-import { ActivatedRoute } from '@angular/router';
-// import { User } from '../../interfaces/interfaces';
+
 
 @Injectable({
   providedIn: 'root'
@@ -12,11 +11,19 @@ import { ActivatedRoute } from '@angular/router';
 export class UserService {
 
   constructor(
-    private http: HttpClient, 
-    private route: ActivatedRoute
-    ) {}
+    private _http: HttpClient,
+  ) {}
 
-  getUserById(id:string): Observable<User>{
-    return this.http.get<User>(`${API_ENDPOINT}/users/${id}`)
+  getUserByIdAsync(id:string): Observable<User>{
+    return this._http.get<User>(`${API_ENDPOINT}/users/${id}`)
   }
+
+  getUsersAsync():Observable<User[]>{
+    return this._http.get<User[]>(`${API_ENDPOINT}/users`)
+  }
+
+  deleteUserByIdAsync(id:string):Observable<User> {
+    return this._http.delete<User>(`${API_ENDPOINT}/users/${id}`)
+  }
+
 }

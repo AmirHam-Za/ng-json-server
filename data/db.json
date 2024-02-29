@@ -1,32 +1,8 @@
 {
   "users": [
     {
-      "id": "65d8d184bd9d706df2e5313c",
-      "title": "Cherie Serrano",
-      "isActive": false,
-      "picture": "http://placehold.it/32x32",
-      "age": 22,
-      "gender": "female",
-      "company": "GEEKNET",
-      "email": "cherieserrano@geeknet.com",
-      "phone": "+1 (942) 573-3611",
-      "address": "680 Albemarle Road, Hoagland, Illinois, 7398"
-    },
-    {
-      "id": "65d8d1841582d49b65fd2b96",
-      "title": "Hate Love",
-      "isActive": true,
-      "picture": "http://placehold.it/32x32",
-      "age": 20,
-      "gender": "male",
-      "company": "ZENTRY",
-      "email": "gonzalezhill@zentry.com",
-      "phone": "+1 (883) 439-2797",
-      "address": "971 Schaefer Street, Sedley, Michigan, 6200"
-    },
-    {
       "id": "65d8d184927a58097ef80d07",
-      "title": "Allyson Best",
+      "title": "Allyson Best!",
       "isActive": true,
       "picture": "http://placehold.it/32x32",
       "age": 34,
@@ -38,7 +14,7 @@
     },
     {
       "id": "65d8d18493f27cba5deaf19f",
-      "title": "Church Love",
+      "title": "Church Love!!!!!!",
       "isActive": true,
       "picture": "http://placehold.it/32x32",
       "age": 24,

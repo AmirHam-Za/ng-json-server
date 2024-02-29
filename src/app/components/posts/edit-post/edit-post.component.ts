@@ -24,29 +24,28 @@ export class EditPostComponent implements OnInit {
     content: ''
   };
   constructor(
-    private route: ActivatedRoute,
-    private router: Router,
-    private http: HttpClient,
-    private postService: PostService,
+    private _route: ActivatedRoute,
+    private _router: Router,
+    private _http: HttpClient,
+    private _postService: PostService,
 
   ) { }
 
   ngOnInit(): void {
-    const postId = String(this.route.snapshot.paramMap.get('id'))
-    this.postService.getPostById(postId).subscribe((post: Post) => {
+    const postId = String(this._route.snapshot.paramMap.get('id'))
+    this._postService.getPostByIdAsync(postId).subscribe((post: Post) => {
       this.post = post;
     });
-    
   }
   
-  onUpdate(): void {
-    this.updatePost().subscribe((updatedPost: Post) => {
-      this.router.navigate(['/posts']);
+  updatePost(): void {
+    this.updatePostAsync().subscribe(() => {
+      this._router.navigate(['/posts']);
       }
     );
   }
  
-  updatePost(): Observable<Post> {
-    return this.http.put<Post>(`${API_ENDPOINT}/posts/${this.post.id}`, this.post);
+  updatePostAsync(): Observable<Post> {
+    return this._http.put<Post>(`${API_ENDPOINT}/posts/${this.post.id}`, this.post);
   }
 }
