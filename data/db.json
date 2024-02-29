@@ -1,18 +1,6 @@
 {
   "users": [
     {
-      "id": "65d8d1843c776383d5fc1c65",
-      "title": "Amelia Prices",
-      "isActive": true,
-      "picture": "http://placehold.it/32x32",
-      "age": 23,
-      "gender": "female",
-      "company": "KNEEDLES",
-      "email": "ameliaprice@kneedles.com",
-      "phone": "+1 (830) 432-2166",
-      "address": "760 Mill Street, Avalon, Delaware, 7954"
-    },
-    {
       "id": "65d8d184bd9d706df2e5313c",
       "title": "Cherie Serrano",
       "isActive": false,
@@ -74,13 +62,6 @@
     }
   ],
   "posts": [
-    {
-      "id": "65d8d35c3544801a48783576",
-      "userId": "65d8d35c28ad2bf6d1638995",
-      "picture": "http://placehold.it/32x32",
-      "title": "Title-1",
-      "content": "Sit ullamco non minim fugiat ex. Elit id aliquip qui esse consectetur fugiat fugiat veniam excepteur commodo aute duis. Ad proident commodo enim sunt incididunt duis occaecat consequat. Non dolore enim esse incididunt irure ut reprehenderit commodo officia culpa ut. Ut quis labore excepteur duis in voluptate ut consectetur pariatur consequat sint ullamco pariatur eu. Duis ex incididunt laborum do ad id aliqua anim incididunt.\r\n"
-    },
     {
       "id": "65d8d35c0fd9f4b1d2472108",
       "userId": "65d8d35c239aacb2cfffbec9",
