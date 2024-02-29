@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Post } from '../../../interfaces/interfaces';
-import { UserService } from '../../../services/user-service/user.service';
 import { PostService } from '../../../services/post-service/post.service';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { RouterLink, Router } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -12,7 +12,6 @@ import { Post } from '../../../interfaces/interfaces';
   imports: [
 
     CommonModule,
-    HttpClientModule,
     RouterLink
   ],
   templateUrl: './post-list.component.html',

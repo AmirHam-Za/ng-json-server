@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
 import { API_ENDPOINT } from '../../../constant';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { PostService } from '../../../services/post-service/post.service';
 
 @Component({
   selector: 'app-edit-post',
@@ -25,18 +26,17 @@ export class EditPostComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private http: HttpClient
+    private http: HttpClient,
+    private postService: PostService,
+
   ) { }
 
   ngOnInit(): void {
     const postId = String(this.route.snapshot.paramMap.get('id'))
-    this.getPostById(postId).subscribe((post: Post) => {
+    this.postService.getPostById(postId).subscribe((post: Post) => {
       this.post = post;
     });
     
-  }
-  getPostById(id: string): Observable<Post> {
-    return this.http.get<Post>(`${API_ENDPOINT}/posts/${id}`);
   }
   
   onUpdate(): void {

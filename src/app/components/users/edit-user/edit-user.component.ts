@@ -43,10 +43,6 @@ export class EditUserComponent  implements OnInit{
     });
   }
 
-  // getUserById(id: string): Observable<User> {
-  //   return this.http.get<User>(`${API_ENDPOINT}/users/${id}`);
-  // }
-  
   onUpdate(): void {
     this.updateUser().subscribe((updatedUser: User) => {
       this.router.navigate(['/users']);
