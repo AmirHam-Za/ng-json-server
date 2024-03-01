@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 import { API_ENDPOINT } from '../../../constant';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { PostService } from '../../../services/post-service/post.service';
+import { PostService } from '@services/post/post.service';
 
 @Component({
   selector: 'app-edit-post',
@@ -37,15 +37,10 @@ export class EditPostComponent implements OnInit {
       this.post = post;
     });
   }
-  
   updatePost(): void {
-    this.updatePostAsync().subscribe(() => {
+    this._postService.updatePostAsync(this.post).subscribe(() => {
       this._router.navigate(['/posts']);
-      }
-    );
+    });
   }
- 
-  updatePostAsync(): Observable<Post> {
-    return this._http.put<Post>(`${API_ENDPOINT}/posts/${this.post.id}`, this.post);
-  }
+  
 }

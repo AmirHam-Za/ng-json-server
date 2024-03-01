@@ -28,6 +28,7 @@
     "@angular/cli": "^17.1.0",
     "@angular/compiler-cli": "^17.1.0",
     "@types/jasmine": "~5.1.0",
+    "concurrently": "^8.2.2",
     "jasmine-core": "~5.1.0",
     "json-server": "^1.0.0-alpha.23",
     "karma": "~6.4.0",

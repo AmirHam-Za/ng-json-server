@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, Router } from '@angular/router';
 import { Post } from '../../../interfaces/interfaces';
-import { PostService } from '../../../services/post-service/post.service';
+import { PostService } from '@services/post/post.service';
 
 @Component({
   selector: 'app-post-list',

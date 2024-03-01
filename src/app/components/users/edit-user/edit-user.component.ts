@@ -2,11 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { User } from '../../../interfaces/interfaces';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
-import { API_ENDPOINT } from '../../../constant';
 import { FormsModule } from '@angular/forms';
-import { UserService } from '../../../services/user-service/user.service';
+import { UserService } from '@services/user/user.service';
 
 @Component({
   selector: 'app-edit-user',
@@ -44,14 +42,10 @@ export class EditUserComponent  implements OnInit{
   }
 
   updateUser(): void {
-    this.updateUserAsync().subscribe(() => {
+    this._userService.updateUserAsync(this.user).subscribe(() => {
       this._router.navigate(['/users']);
       }
     );
-  }
-
-  updateUserAsync(): Observable<User> {
-    return this._http.put<User>(`${API_ENDPOINT}/users/${this.user.id}`, this.user);
   }
 
 }

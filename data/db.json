@@ -1,20 +1,8 @@
 {
   "users": [
     {
-      "id": "65d8d184927a58097ef80d07",
-      "title": "Allyson Best!",
-      "isActive": true,
-      "picture": "http://placehold.it/32x32",
-      "age": 34,
-      "gender": "female",
-      "company": "PORTALIS",
-      "email": "allysonbest@portalis.com",
-      "phone": "+1 (865) 426-2999",
-      "address": "262 Cadman Plaza, Gratton, Guam, 7218"
-    },
-    {
       "id": "65d8d18493f27cba5deaf19f",
-      "title": "Church Love!!!!!!",
+      "title": "Church Love!",
       "isActive": true,
       "picture": "http://placehold.it/32x32",
       "age": 24,
@@ -26,7 +14,7 @@
     },
     {
       "id": "65d8d184a8bff8091b936e76",
-      "title": "Fern Chanw",
+      "title": "Fern Chanw!",
       "isActive": false,
       "picture": "http://placehold.it/32x32",
       "age": 25,

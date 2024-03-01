@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, Router } from '@angular/router';
 import { User } from '../../../interfaces/interfaces';
-import { UserService } from '../../../services/user-service/user.service';
+import { UserService } from '@services/user/user.service';
 
 @Component({
   selector: 'app-user-list',

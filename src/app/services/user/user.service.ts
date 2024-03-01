@@ -12,18 +12,21 @@ export class UserService {
 
   constructor(
     private _http: HttpClient,
-  ) {}
+  ) { }
 
-  getUserByIdAsync(id:string): Observable<User>{
+  getUserByIdAsync(id: string): Observable<User> {
     return this._http.get<User>(`${API_ENDPOINT}/users/${id}`)
   }
 
-  getUsersAsync():Observable<User[]>{
+  getUsersAsync(): Observable<User[]> {
     return this._http.get<User[]>(`${API_ENDPOINT}/users`)
   }
 
-  deleteUserByIdAsync(id:string):Observable<User> {
+  deleteUserByIdAsync(id: string): Observable<User> {
     return this._http.delete<User>(`${API_ENDPOINT}/users/${id}`)
+  }
+  updateUserAsync(user: User): Observable<User> {
+    return this._http.put<User>(`${API_ENDPOINT}/users/${user.id}`, user);
   }
 
 }
