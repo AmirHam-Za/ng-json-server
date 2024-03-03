@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { UserDetailsComponent } from './components/users/user-details/user-details.component';
 import { EditUserComponent } from './components/users/edit-user/edit-user.component';
 import { EditPostComponent } from './components/posts/edit-post/edit-post.component';
@@ -13,24 +13,13 @@ export const routes: Routes = [
     path: '',
     component: HomeComponent
   },
-  {
-    path: 'users',
-    component: UserListComponent
-  },
-  {
-    path: 'posts',
-    component: PostListComponent
-  },
-  {
-    path: 'users/:id',
-    component: UserDetailsComponent
-  },
-  {
-    path: 'posts/:id',
-    component: PostDetailsComponent
-  },
-  { path: 'users/:id/edit', component: EditUserComponent }, 
-  { path: 'posts/:id/edit', component: EditPostComponent }, 
 
+  { path: 'users', component: UserListComponent },
+  { path: 'users/:id', component: UserDetailsComponent },
+  { path: 'users/:id/edit', component: EditUserComponent }, 
+  
+  { path: 'posts', component: PostListComponent },
+  { path: 'posts/:id', component: PostDetailsComponent },
+  { path: 'posts/:id/edit', component: EditPostComponent }, 
 
 ];

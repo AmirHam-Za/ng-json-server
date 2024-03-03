@@ -18,15 +18,3 @@ export interface User {
   "phone": string,
   "address": string
 }
-// export interface User {
-//   id: string,
-//   title: string,
-//   isActive: boolean,
-//   picture: string,
-//   age: string,
-//   gender: string,
-//   company: string,
-//   email: string,
-//   phone: string,
-//   address: string
-// }
